@@ -1,0 +1,18 @@
+@use "utils" as *;
+.project {
+  align-items: stretch;
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: rem(30);
+    justify-items: center;
+
+    .illustration {
+      width: rem(300);
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+@use "utils" as *;
+
+.toggle {
+  @include flex();
+
+  &__icon {
+    margin-right: rem(12);
+  }
+
+  &__text {
+    font-size: rem(16);
+    margin-right: rem(8);
+  }
+
+  &__switch {
+    display: inline-block;
+    position: relative;
+    width: 60px;
+    height: 34px;
+    border-radius: 50px;
+    cursor: pointer;
+    background: #ccc;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 4px;
+      top: 4px;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background-color: #fff;
+      transition: transform 0.3s;
+    }
+  }
+
+  &__input {
+    display: none;
+
+    &:checked + label {
+      background-color: var(--col-primary);
+    }
+
+    &:checked + label::after {
+      transform: translateX(100%);
+    }
+  }
+}

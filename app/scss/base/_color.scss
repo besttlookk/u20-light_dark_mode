@@ -1,0 +1,18 @@
+:root {
+  --col-primary: #4ea853;
+  --col-secondary: #0d81b5;
+  --col-txt-primary: rgb(250, 250, 250);
+  --col-txt-bg: rgb(66, 66, 66);
+  --col-txt-bg-alt: rgba(66, 66, 66, 0.7);
+  --col-bg: rgb(255, 255, 255);
+  --box-shadow: 0 5px 20px 1px rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="dark"] {
+  --col-primary: #41b35d;
+  --col-secondary: #f9a826;
+  --col-txt-primary: #000;
+  --col-txt-bg: rgba(255, 255, 255, 0.9);
+  --col-txt-bg-alt: rgba(255, 255, 255, 0.7);
+  --col-bg: #121212;
+}

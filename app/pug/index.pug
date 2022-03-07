@@ -1,0 +1,31 @@
+extends templates/layout 
+
+block main 
+  section.section.home#home
+    h1.home__heading Offer protection, increase margins
+    p Turn risk-free, passive revenue on autopilot. It only takes 4 clicks 
+    .home__btns 
+      button.home__btn.home__btn--solid Connect with shopify 
+      button.home__btn.home__btn--outline Request a demo
+
+  section.section.about#about 
+    h1 About Us.
+    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque inventore cum quasi perspiciatis similique repellat numquam quidem. Distinctio sit sunt repellendus error voluptatem a corrupti. Nemo, quos? Vitae, ea. Asperiores?
+
+  section.section.project#projects
+    .project__wrapper
+      .illustration
+        img(alt="illustration" src="../img/collaborating_dark.svg" id="illustration1")
+      .illustration
+        img(alt="illustration" src="../img/interview_dark.svg" id="illustration2")
+      .illustration
+        img(alt="illustration" src="../img/mobile_dark.svg" id="illustration3")
+
+  section.section.contact#contact
+    .social-icons 
+      i.fab.fa-github
+      i.fab.fa-codepen
+      i.fab.fa-linkedin-in
+      i.fab.fa-medium
+      i.fab.fa-instagram
+      i.fab.fa-youtube

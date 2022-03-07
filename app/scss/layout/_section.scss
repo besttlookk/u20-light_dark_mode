@@ -1,0 +1,7 @@
+@use "utils" as *;
+
+.section {
+  min-height: 100vh;
+  @include flex($direction: column);
+  padding: rem(30);
+}

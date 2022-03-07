@@ -1,0 +1,23 @@
+@use "utils" as *;
+
+.social-icons {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.fab {
+  font-size: rem(100);
+  margin-right: rem(50);
+  cursor: pointer;
+  color: var(--col-primary);
+
+  @include bp-down("medium") {
+    font-size: rem(80);
+    margin-right: rem(30);
+  }
+
+  @include bp-down("small") {
+    font-size: rem(50);
+    margin-right: rem(10);
+  }
+}

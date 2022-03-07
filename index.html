@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./dist/style.css">
+    <script src="./dist/script.js" defer></script>
+    <title>Frontend Mentor | Prabhash Ranjan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+  </head>
+  <body>
+    <header class="header"> 
+      <nav class="header__nav"> <a href="#home">HOME</a><a href="#about">ABOUT</a><a href="#projects">PROJECT</a><a href="#contact">CONTACT</a></nav>
+      <div class="toggle"> <span class="toggle__icon" id="toggle-icon"><span class="toggle__text">Light Mode </span><i class="fas fa-sun"> </i></span>
+        <input class="toggle__input" type="checkbox" id="toggle">
+        <label class="toggle__switch" for="toggle"></label>
+      </div>
+    </header>
+    <section class="section home" id="home">
+      <h1 class="home__heading">Offer protection, increase margins</h1>
+      <p>Turn risk-free, passive revenue on autopilot. It only takes 4 clicks </p>
+      <div class="home__btns"> 
+        <button class="home__btn home__btn--solid">Connect with shopify </button>
+        <button class="home__btn home__btn--outline">Request a demo</button>
+      </div>
+    </section>
+    <section class="section about" id="about"> 
+      <h1>About Us.</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque inventore cum quasi perspiciatis similique repellat numquam quidem. Distinctio sit sunt repellendus error voluptatem a corrupti. Nemo, quos? Vitae, ea. Asperiores?</p>
+    </section>
+    <section class="section project" id="projects">
+      <div class="project__wrapper">
+        <div class="illustration"><img alt="illustration" src="../img/collaborating_dark.svg" id="illustration1"></div>
+        <div class="illustration"><img alt="illustration" src="../img/interview_dark.svg" id="illustration2"></div>
+        <div class="illustration"><img alt="illustration" src="../img/mobile_dark.svg" id="illustration3"></div>
+      </div>
+    </section>
+    <section class="section contact" id="contact">
+      <div class="social-icons"> <i class="fab fa-github"></i><i class="fab fa-codepen"></i><i class="fab fa-linkedin-in"></i><i class="fab fa-medium"></i><i class="fab fa-instagram"></i><i class="fab fa-youtube"></i></div>
+    </section>
+  </body>
+</html>

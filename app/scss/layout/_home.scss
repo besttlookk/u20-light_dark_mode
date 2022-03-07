@@ -1,0 +1,52 @@
+@use "utils" as *;
+
+.home {
+  &__heading {
+    text-align: center;
+  }
+
+  p {
+    margin-bottom: rem(16);
+  }
+
+  &__btns {
+    margin-top: rem(20);
+    @include flex();
+
+    @include bp-down("small") {
+      flex-direction: column;
+    }
+  }
+
+  &__btn {
+    display: inline-block;
+    border: none;
+    padding: rem(10) rem(16);
+    margin-right: rem(12);
+    margin-bottom: rem(16);
+    width: 180px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: transform 0.3s;
+
+    &--solid {
+      color: white;
+      background-color: var(--col-primary);
+    }
+
+    &--outline {
+      border: 2px solid var(--col-primary);
+      background-color: white;
+      color: var(--col-primary);
+    }
+
+    &:hover,
+    &:focus {
+      transform: scale(1.02);
+    }
+
+    &:active {
+      transform: scale(0.98);
+    }
+  }
+}
